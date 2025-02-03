@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Horizons</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/74371f64dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="hbody">
+
+    
+    <nav class="navigation-bar">
+      <a href="Homepage.html"><img src="Logo.jpg" alt="Logo" class="logo" /></a>
+
+      <h1>New Horizons -----------------------» Broaden your Career Scope</h1>
+      <ul>
+        <li>
+          <a href="Careerpage.html"
+            ><p>Careers</p>
+          </a>
+        </li>
+        <li>
+          <a href="Aboutpage.html"
+            ><p>About Us</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+   
+
+    <main>
+      <section>
+        <p class="Title"><strong>Find The Career for You!</strong></p>
+      </section>
+
+      <section>
+        <div class="BoxGrid">
+
+          <div class="Homebox">
+            <p>Search By Career Category</p>
+
+            <a href="Careerpage.html">
+              <button>Visit Page</button>
+            </a>
+          </div>
+
+          <div class="Homebox">
+            <p>Search By Career Skills</p>
+
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                Browse Skills
+              </button>
+
+              <div id="myDropdown" class="dropdown-content">
+                <a href="SkillpageOne.html">Mathematics<br /></a>
+                <a href="SkillpageTwo.html">Computer Science</a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="Homebox">
+            <p>View Career<br> Analytics</p>
+
+            <div class="dropdown2">
+              <button onclick="Analytics()" class="dropbtn">Go View</button>
+              <div id="dropdown2" class="dropdown-content">
+                <a href="AnalyticspageOne.html">HSE Supervisor<br /></a>
+                <a href="AnalyticspageTwo.html">Marine Engineer<br /></a>
+                <a href="AnalyticspageThree.html"
+                  >Offshore Drilling Engineer<br
+                /></a>
+                <a href="AnalyticspageFour.html">Petroleum Engineer</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+
+    <section>
+    <script>
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+
+    </script>
+
+    <script>
+      function Analytics() {
+        document.getElementById("dropdown2").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+
+    </section>
+  </body>
+</html>
